@@ -25,6 +25,35 @@ console.table(a);
 
 
 
-b = ["harsh","aravind","aarif","abinaya","anand","dinesh","natrayan"];
-console.log(b);
-console.table(b)
+p=("2"+"2"+"2"-2); 
+console.log(p);
+console.log(typeof p);
+
+f=(2+"2"+"2"-2); 
+console.log(f);
+console.log(typeof f);
+
+console.log("2"+2+"2"-2);
+
+console.log(2+"2"+2-"2");
+
+console.log("2"+"2"-2+"2"+2);
+
+console.log("2"+"2"-2+"2");
+
+console.log("2"-2+2+"2");
+
+console.log(2+"2"-2+2+"2");
+
+Y=(2+"2"-"2"+2-"2");
+console.log(Y);
+console.log(typeof Y);
+
+
+
+
+
+
+
+
+
