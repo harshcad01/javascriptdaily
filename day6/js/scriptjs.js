@@ -2,7 +2,7 @@ function calculate(){
     var a= parseFloat(document.getElementById("num1").value);
     var b= parseFloat(document.getElementById("num2").value);
     var R;
-    var opt = ['+','-','*']
+    var opt = "*"
     switch(opt){
         case "+":
             R =a+b;
