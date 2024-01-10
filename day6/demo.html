@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Addition Program with Switch</title>
+</head>
+<body>
+
+<h2>Simple Addition Program with Switch</h2>
+
+<label for="num1">Enter number 1:</label>
+<input type="number" id="num1"><br><br>
+
+<label for="num2">Enter number 2:</label>
+<input type="number" id="num2"><br><br>
+
+<button onclick="addNumbers()">Add</button><br><br>
+
+<p>Result: <span id="result"></span></p>
+
+<script>
+  function addNumbers() {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    
+    var operator = 'add';
+    var result;
+    
+    switch (operator) {
+      case 'add':
+        result = num1 + num2;
+        break;
+      // You can add cases for other operations like subtraction, multiplication, etc.
+      default:
+        result = "Invalid operator";
+    }
+    
+    document.getElementById('result').innerText = result;
+  }
+</script>
+
+</body>
+</html>
