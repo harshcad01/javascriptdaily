@@ -19,24 +19,41 @@
 <p>Result: <span id="result"></span></p>
 
 <script>
-  function addNumbers() {
-    var num1 = parseFloat(document.getElementById('num1').value);
-    var num2 = parseFloat(document.getElementById('num2').value);
-    
-    var operator = 'add';
-    var result;
-    
-    switch (operator) {
-      case 'add':
-        result = num1 + num2;
-        break;
-      // You can add cases for other operations like subtraction, multiplication, etc.
-      default:
-        result = "Invalid operator";
+  function calculate(event) {
+    event.preventDefault(); // Prevents the form from submitting and refreshing the page
+
+    var a = parseFloat(document.getElementById("num1").value);
+    var b = parseFloat(document.getElementById("num2").value);
+
+    // Perform calculation based on the selected operation
+    // The calculation function already updates the result span
+}
+
+function calculation(opt) {
+    var a = parseFloat(document.getElementById("num1").value);
+    var b = parseFloat(document.getElementById("num2").value);
+
+    switch(opt) {
+        case "+":
+            document.getElementById('result').innerHTML = a + b;
+            break;
+        case "-":
+            document.getElementById('result').innerHTML = a - b;
+            break;
+        case "*":
+            document.getElementById('result').innerHTML = a * b;
+            break;
+        case "/":
+            document.getElementById('result').innerHTML = a / b;
+            break;
+        case "%":
+            document.getElementById('result').innerHTML = a % b;
+            break;
+        default:
+            alert("Invalid Operation");
     }
-    
-    document.getElementById('result').innerText = result;
-  }
+}
+
 </script>
 
 </body>
