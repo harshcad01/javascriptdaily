@@ -13,27 +13,6 @@
     />
   </head>
   <body>
-    <div class="head">
-      <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" />
-      <h1>AVENUE SUPERMARKET BILLING</h1>
-    </div>
-    <div class="footer">
-      <ul>
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="#">EDIT</a></li>
-        <li><a href="#">TOOLS</a></li>
-        <li><a href="#">HELP</a></li>
-        <li><a href="#">CONTACT US</a></li>
-        <li class="lastchild"><a href="Leo.html">REGISTER</a></li>
-        <li class="lastchild"><a href="#">SIGN IN</a></li>
-      </ul>
-    </div>
-    <form
-      method="POST"
-      name="myForm"
-      onsubmit="return validateForm()"
-      action="submit_registration.php"
-    >
       <div class="headform">
         <h1>REGISTER YOUR DETAILS</h1>
       </div>
@@ -41,7 +20,7 @@
       <label><b>USERNAME:</b></label>
       <input
         type="text"
-        id="username"
+        id="txusername"
         name="username"
         value="harsh"
         placeholder="Enter Username"
@@ -51,7 +30,7 @@
       <label><b>FIRST NAME:</b></label>
       <input
         type="text"
-        id="firstname"
+        id="txfirstname"
         name="firstname"
         value="harsh"
         placeholder="Enter Firstname"
@@ -61,7 +40,7 @@
       <label><b>LAST NAME:</b></label>
       <input
         type="text"
-        id="lastname"
+        id="txlastname"
         name="lastname"
         value="A"
         placeholder="Enter Lastname"
@@ -71,7 +50,7 @@
       <label><b>PHONE NUMBER:</b></label>
       <input
         type="number"
-        id="phnumber"
+        id="txphnumber"
         value="9025664587"
         name="phone"
         maxlength="13"
@@ -82,74 +61,54 @@
       <label><b>EMAIL:</b></label>
       <input
         type="email"
-        name="email"
+        name="txemail"
         value="Harsh@gmail.com"
-        id="email"
+        id="txemail"
         placeholder="Enter 
       Email Id"
         required
       />
 
-      <label><b>PASSWORD:</b></label>
-      <div class="passclass">
-        <input
-          id="pass"
-          type="password"
-          name="pass"
-          placeholder="Enter Password"
-          required
-        />
-        <input
-          class="box"
-          id="check"
-          type="checkbox"
-          onchange="togglePassword()"
-        />
-      </div>
-
-      <label><b>CONFIRM PASSWORD:</b></label>
-      <div class="passclass">
-        <input
-          id="conpass"
-          type="password"
-          name="conpass"
-          placeholder="Enter Confirm Password"
-          required
-        />
-        <input
-          class="box"
-          id="check"
-          type="checkbox"
-          onchange="togglePassword()"
-        />
-      </div>
-
-      <div class="chek1">
-        <input type="checkbox" name="check" required />
-        <label>Please check & verify above details</label>
-      </div>
 
       <div class="btn">
         <button type="reset" name="clear">CLEAR</button>
-        <button type="submit" name="submit">
-          <a href="#">REGISTER</a>
+        <button type="submit" onclick="register()">
+         <a href="table.html">Register</a>
         </button>
       </div>
-    </form>
 
-    <table id="formDetailsTable">
-      <thead>
-        <tr>
-          <th>Username</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Phone Number</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody id="formDetailsBody"></tbody>
-    </table>
 
-    <script src="js/myscript.js"></script>
+        <table border="1px">
+          <tr>
+            <th>Registreation Data</th>
+          </tr>
+          <tr>
+            <td>Username</td>
+            <td id="username"></td>
+          </tr>
+          <tr>
+            <td>Firstname</td>
+            <td id="firstname"></td>
+          </tr>
+          <tr>
+            <td>lastname</td>
+            <td id="lastname"></td>
+          </tr>
+          <tr>
+            <td>phnumber</td>
+            <td id="phnumber"></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td id="email"></td>
+          </tr>
+        </table>
+      </body>
+    </html> 
+    
+   
+    
+
+    <script src="js/scriptjs.js"></script>
   </body>
 </html>
