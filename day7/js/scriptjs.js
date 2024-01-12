@@ -14,5 +14,8 @@
 
     var email = document.getElementById("txemail").value;
     document.getElementById("email").innerHTML=email;
+
+    var dob = document.getElementById("txdob").value;
+    document.getElementById("dob").innerHTML=dob;
   }
 
