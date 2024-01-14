@@ -17,5 +17,15 @@
 
     var dob = document.getElementById("txdob").value;
     document.getElementById("dob").innerHTML=dob;
+
+    if (document.getElementById('txmale').checked) {
+      gender_male = document.getElementById('txmale').value;
+      document.getElementById("gender").innerHTML=gender_male;
+    }
+
+    if (document.getElementById('txfemale').checked) {
+      gender_female = document.getElementById('txfemale').value;
+      document.getElementById("gender").innerHTML=gender_female;
+    }
   }
 

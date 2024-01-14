@@ -75,7 +75,28 @@
         id="txdob"
         placeholder="Enter dob"
         required
-      />
+      /><br>
+
+      <label><b>Gender:</b></label>
+      <input
+        type="radio"
+        name="male"
+        value="Male"
+        id="txmale"
+        required
+      >
+      Male </input>
+
+      <input
+        type="radio"
+        name="female"
+        value="female"
+        id="txfemale"
+        required
+      >
+      Female </input>
+
+
 
 
       <div class="btn">
@@ -111,6 +132,11 @@
           <tr>
             <td>Date Of Birth</td>
             <td id="dob"></td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td id="gender"></td>
           </tr>
 
         </table>
