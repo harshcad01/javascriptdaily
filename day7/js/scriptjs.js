@@ -9,14 +9,14 @@ function register() {
   var lname = document.getElementById("txlastname").value;
   document.getElementById("lastname").innerHTML = lname;
 
-  var phnum = document.getElementById("txphnumber").value;
+  var phnum = parseInt(document.getElementById("txphnumber").value);
   document.getElementById("phnumber").innerHTML = phnum;
 
   var email = document.getElementById("txemail").value;
   document.getElementById("email").innerHTML = email;
-
-  var dob = document.getElementById("txdob").value;
-  document.getElementById("dob").innerHTML = dob;
+                                                    
+  var date = document.getElementById("txdob").value;
+  document.getElementById("dob").innerHTML = date;
 
   if (document.getElementById('txmale').checked) {
     gender_male = document.getElementById('txmale').value;
