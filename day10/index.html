@@ -6,36 +6,30 @@
     <title>BILLING DESK</title>
 
     <link rel="stylesheet" type="text/css" href="stylesfom.css" />
-    
   </head>
   <body>
+    <div class="headform">
+      <h1>REGISTER YOUR DETAILS</h1>
+    </div>
 
-      <div class="headform">
-        <h1>REGISTER YOUR DETAILS</h1>
-      </div>
+    <label><b>values:</b></label>
+    <input
+      type="text"
+      id="txvalue"
+      name="username"
+      value=""
+      placeholder="Enter Username"
+      required
+    />
 
-      <label><b>values:</b></label>
-      <input
-        type="text"
-        id="txvalue"
-        name="username"
-        value=""
-        placeholder="Enter Username"
-        required
-      />
+    <input
+      type="submit"
+      id="submit"
+      name="submit"
+      value="submit"
+      onclick="loop()"
+    />
 
-      <input
-        type="submit"
-        id="submit"
-        name="submit"
-        value="submit"
-        onclick="loop()"
-
-      />
-
-    
-   
-
-    <script src="js/scriptjs.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
