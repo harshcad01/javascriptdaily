@@ -1,0 +1,18 @@
+.imagecontainer{
+	width: 100%;
+  }
+
+  .swiper {
+	width: 1000px;
+	height: auto;
+  }
+
+  .swiper .swiper-button-prev,  .swiper .swiper-button-next{
+	color: #fff;
+    opacity: 0;
+  }
+
+  .swiper-pagination .bullet-active{
+	color: #fff;
+
+  }

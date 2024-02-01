@@ -22,15 +22,5 @@ console.log("Creating a function in side the object");
       return message;
     }
   };
-
  pizza.bake();
-
-
-
-
-
-
-
-
-
-
+ 
