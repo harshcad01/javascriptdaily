@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Real-Time Running Time Example</title>
+</head>
+<body>
+
+<div class="container mt-4">
+  <h2 class="mb-4">Real-Time Running Time</h2>
+
+  <div id="realTime"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function updateRealTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+    var day = currentTime.getDate();
+    var month = currentTime.getMonth() + 1; // Months are zero-based
+    var year = currentTime.getFullYear();
+
+    // Add leading zero if needed
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+
+    // Display the time along with day, month, and year in the 'realTime' div
+    document.getElementById("realTime").innerHTML =
+      hours + ":" + minutes + ":" + seconds + " on " + day + "/" + month + "/" + year;
+  }
+
+  // Update the time every second
+  setInterval(updateRealTime, 1000);
+
+  // Initial update
+  updateRealTime();
+</script>
+
+</body>
+</html>
